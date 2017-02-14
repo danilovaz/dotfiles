@@ -1,15 +1,23 @@
-# aliases for Tmux
-alias tmux='tmux -2'
-alias ta='tmux attach -t'
-alias tnew='tmux new -s'
-alias tls='tmux ls'
-alias tkill='tmux kill-session -t'
+# aliases for easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
 
 # convenience aliases for editing configs
 alias ev='vim ~/.vimrc' # configs for vim
 alias et='vim ~/.tmux.conf' # configs for tmux
 alias ez='vim ~/.zshrc' # configs for zsh
 alias ea='vim /home/danilovaz/.oh-my-zsh/lib/alias.zsh' # alias for zsh
+
+# aliases for Tmux
+alias tmux='tmux -2'
+alias ta='tmux attach -t'
+alias tnew='tmux new -s'
+alias tls='tmux ls'
+alias tkill='tmux kill-session -t'
 
 # aliases for git
 alias gst='git status' # show the working tree status
@@ -31,12 +39,38 @@ alias c='clear'
 
 # aliases for NPM
 alias npmu="npm update"
-alias npmi="npm init"
+alias npmi="npm init"i
+
+# aliases for events
+alias events_went='cd ~/Documents/Danilo/Eventos/FUI; ls'
+alias events_organized='cd ~/Documents/Danilo/Eventos/ORGANIZO; ls'
+alias events_talked='cd ~/Documents/Danilo/Eventos/PALESTREI; ls'
+
+# aliases for my talks
+alias mytalks='cd ~/Documents/Danilo/Projetos/open_source/talks; ls'
+
+# aliases for my interviews
+alias myinterviews='cd ~/Documents/Danilo/Projetos/entrevistas; ls'
 
 # aliases for open source projects
-alias OP='cd ~/Documents/Danilo/Projetos/OP; ls'
-alias curso_svg='cd ~/Documents/Danilo/Projetos/OP/curso-svg'
-alias tinbook='cd ~/Documents/Danilo/Projetos/OP/tinbook/'
+alias open_source='cd ~/Documents/Danilo/Projetos/open_source; ls'
+alias front_career='cd ~/Documents/Danilo/Projetos/open_source/front-end-career'
+alias frontinvale='cd ~/Documents/Danilo/Projetos/open_source/frontinvale.github.io'
+alias mentoria='cd ~/Documents/Danilo/Projetos/open_source/training-center/mentoria'
+alias beerjs='cd ~/Documents/Danilo/Projetos/open_source/sjc'
+alias epic='cd ~/Documents/Danilo/Projetos/open_source/epic-discussions'
+alias 100coisas='cd ~/Documents/Danilo/Projetos/open_source/100-coisas-dev'
+
+# aliases for personal (and open source) projects
+alias dotfiles='cd ~/Documents/Danilo/Projetos/open_source/dotfiles'
+alias danilovaz='cd ~/Documents/Danilo/Projetos/open_source/danilovaz.github.io'
+alias sleep='cd ~/Documents/Danilo/Projetos/open_source/Going-to-Sleep'
+alias tinbook='cd ~/Documents/Danilo/Projetos/open_source/tinbook/'
+alias vimvivenci='cd ~/Documents/Danilo/Learn/vimvivenci'
+
+# aliases for courses projects
+alias curso_svg='cd ~/Documents/Danilo/Cursos/soualuno/curso-svg' # Willian Justen course of SVG
+alias curso_react='cd ~/Documents/Danilo/Cursos/soualuno/curso-react' # Fernando Daciuk course of React
 
 # aliases for mlabs projects
 alias mlabs_front='cd ~/Documents/Danilo/Projetos/mlabs/mlabs_front'
